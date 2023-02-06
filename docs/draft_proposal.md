@@ -10,6 +10,8 @@ Number of rows: 552,105.
 
 Number of columns: 16.
 
+Time Frame: 2011 - 2022.
+
 Following a thorough examination of the dataset, the columns of the final data frame and their data types are as follows:
 
 RowID - int
