@@ -5,8 +5,11 @@ Crimes are the most significant threat to mankind. It is an act that causes phys
 
 ### Dataset: 
 https://data.baltimorecity.gov/datasets/part1- crime-data/explore?location=39.304390%2C-7 6.624118%2C10.97&showTable=true. 
+Number of rows: 552,105. 
+Number of columns: 16.
 
 Following a thorough examination of the dataset, the columns of the final data frame and their data types are as follows:
+
 RowID - int
 
 CrimeDateTime – date, datatime 
@@ -41,7 +44,7 @@ Total_Incidents – float, int
 
 ### 3-way classification: 
 We are going to explore a 3-way classification method by creating 3 classes for prediction (High, Medium, and Low). We still have the Physical threat category to be high and broke down the non fatal category into 2 (Low and Medium). 
-feature variables:  'Season', 'Crime_Hour','District', 'Neighborhood', 'Crime_WeekDay'. 
+#### feature variables:  'Season', 'Crime_Hour','District', 'Neighborhood', 'Crime_WeekDay'. 
 
 ### Objective: 
 Through this project we want to deliver a machine learning model which predicts the level of risk of the crime associated with that district, thus evaluating the safe scale of the area and help people in deciding the safe place to move in for a new life.
