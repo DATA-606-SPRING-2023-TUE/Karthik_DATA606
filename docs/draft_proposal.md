@@ -5,7 +5,9 @@ Crimes are the most significant threat to mankind. It is an act that causes phys
 
 ### Dataset: 
 https://data.baltimorecity.gov/datasets/part1- crime-data/explore?location=39.304390%2C-7 6.624118%2C10.97&showTable=true. 
+
 Number of rows: 552,105. 
+
 Number of columns: 16.
 
 Following a thorough examination of the dataset, the columns of the final data frame and their data types are as follows:
