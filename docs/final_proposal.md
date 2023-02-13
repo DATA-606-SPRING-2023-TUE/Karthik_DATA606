@@ -5,7 +5,7 @@ Crimes are the most significant threat to mankind. It is an act that causes phys
 
 ### Dataset: 
 We have taken the dataset from OpenBaltimore, which consists of the crime data in different parts of baltimore. We have 16 features and5 lakh instances in the data set.
-https://data.baltimorecity.gov/datasets/part1- crime-data/explore?location=39.304390%2C-7 6.624118%2C10.97&showTable=true. 
+https://data.baltimorecity.gov/datasets/part1-crime-data/explore?location=39.304390%2C-76.624118%2C10.97&showTable=true. 
 
 #### Number of rows: 552,105. 
 
