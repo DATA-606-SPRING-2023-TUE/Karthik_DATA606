@@ -11,7 +11,7 @@ https://data.baltimorecity.gov/datasets/part1- crime-data/explore?location=39.30
 
 #### Number of columns: 16.
 
-#### Time Frame: 2011 - 2022.
+#### Time Frame: 2011 - 2023.
 
 ##### Following a thorough examination of the dataset, the columns of the final data frame and their data types are as follows:
 
