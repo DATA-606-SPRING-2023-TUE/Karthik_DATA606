@@ -36,6 +36,7 @@ https://data.baltimorecity.gov/datasets/part1- crime-data/explore?location=39.30
 
 ### 3-way classification: 
 We are going to explore a 3-way classification method by creating 3 classes for prediction (High, Medium, and Low). We had the CrimeDateTime feature from which we have generated other features like month of the crime, Day of the week, Hour and these attributes were used to generate the attribute like season, part of the day (Morning or night) and Day of the Crime (weekend or weekday).
+Creating a new column label based on description column. 
 
 | Classification  | Types of crimes                 |
 | :----------------| :--------------------------------- |
