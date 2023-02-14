@@ -1,1 +1,1 @@
-## Pyhton notebook of the final project. 
+## Python notebook of the final project. 
