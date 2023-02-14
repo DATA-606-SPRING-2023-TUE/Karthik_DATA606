@@ -1,1 +1,1 @@
-## EDA of the final project. 
+## Pyhton notebook of the final project. 
