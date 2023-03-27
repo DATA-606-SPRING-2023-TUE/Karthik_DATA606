@@ -50,6 +50,9 @@ We have divided the crime accordingly respected to the season of the year, what 
 ### Objective: 
 Through this project we want to deliver a machine learning model which predicts the level of risk of the crime associated with that district, thus evaluating the safe scale of the area and help people in deciding the safe place to move in for a new life.
 
+### KNN-Classification:
+With the 3 classes to predict, we created a model using KNN classifier. This approach determines the likelihood that a data point will belong to one of the classes based on the data points closest to it. The KNN algorithm basically creates an imaginary boundary to classify the data. When new data points come in, the algorithm will try to predict that to the nearest of the boundary line.
+
 ### Machine Learning models: 
 The objective would be to train a model for prediction. We are going to build the model using K-Nearest Neighbor (KNN) classification and Random Forest algorithm for crime prediction. And will eventually host the application on StreamLit for better user interaction.
 We have using the Grid Search to tune the hyper-parameters and increase the accuracy of the model. It is a library function from sklearn's model_selection package. We are going to loop through predefined hyper-parameters and fit our estimator (model) on the training set. This way we can select the best parameters from the listed hyper-parameters.
