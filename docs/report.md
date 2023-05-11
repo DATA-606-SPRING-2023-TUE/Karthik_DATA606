@@ -1,6 +1,5 @@
 # Baltimore City crime rate and safety level statistics.
 ### Data 606 final project report. 
-#### - By Singireddy Karthik Reddy. 
 
 ### - Presentation video: https://youtu.be/hBOvkVGrep0
 ### - Presentation slides: https://docs.google.com/presentation/d/10AHbVPUm4aBDM_d5_PrFO-RA101R41rj/edit?usp=sharing&ouid=105317721196373363836&rtpof=true&sd=true
@@ -33,10 +32,10 @@ Preprocessing includes removing any null values which may affect the accuracy of
 | Inside_Outside (str)               | If the attack was inside or outside.      |
 | Weapon (str, float)                | Weapon used for the attack.               |
 | Post (int, float)                  | Postal code.                              |
-| District (str)                     | District of incident taken place.         |
-| Neighborhood (str)                 | Neighborhood of the incident taken place. | 
-| Latitude (float)                   | Latitude of location of incident.         |
-| Longitude (float)                  | Longitude of location of incident.        |
+| District (str)                     | District of the incident took place.         |
+| Neighborhood (str)                 | Neighborhood of the incident took place. | 
+| Latitude (float)                   | Latitude of the location of the incident.         |
+| Longitude (float)                  | Longitude of the location of the incident.        |
 | GeoLocation (float)                | Geo Location of the incident.             |
 | Premise (str, char)                | Premise of the incident.                  |
 | VRIName (str, char)                | Video remote interpretation.              |
@@ -76,6 +75,6 @@ In 2-way classification, we categorize the crime types into 2 classes: Fatal ( w
 ### Conclusion: 
 In this project, we have analyzed the crime trends of Baltimore City using the dataset of all crimes reported in the city of Baltimore that we got from open-Baltimore. Also based on the findings we developed prediction models using a Random Forest Classifier and KNN classifier, for both the cases of 2-way classification (Physical and Non Physical Threat) and 3-way classification( Low, Medium, and High). This application is helpful for people to know if their visit to Baltimore is safe. And also helpful for the Police Dept, so that high-risk areas could be identified to increase protection for the safety of the public.
 
-
+#### - By Singireddy Karthik Reddy. 
 
 
