@@ -1,9 +1,9 @@
 # Baltimore City crime rate and safety level statistics.
 ### Data 606 final project report. 
-#### By Singireddy Karthik Reddy. 
+#### - By Singireddy Karthik Reddy. 
 
-### Presentation video: https://youtu.be/hBOvkVGrep0
-### Presentation slides: https://docs.google.com/presentation/d/10AHbVPUm4aBDM_d5_PrFO-RA101R41rj/edit?usp=sharing&ouid=105317721196373363836&rtpof=true&sd=true
+### - Presentation video: https://youtu.be/hBOvkVGrep0
+### - Presentation slides: https://docs.google.com/presentation/d/10AHbVPUm4aBDM_d5_PrFO-RA101R41rj/edit?usp=sharing&ouid=105317721196373363836&rtpof=true&sd=true
 
 ### Introduction: 
 Crimes are the most significant threat to mankind. It is an act that causes physical or mental harm, as well as property damage or loss. Crimes are of different types – robbery, murder, rape, assault, homicide, and Larceny. To predict the major types of crime happening at that place, there are chances to reduce the number of cases by increasing the police force or avoiding visiting that place during the season or day of the time it is observed more frequently.
