@@ -12,7 +12,7 @@ We have taken the dataset from OpenBaltimore, which consists of crime data in di
 https://data.baltimorecity.gov/datasets/part1-crime-data/explore?location=39.304390%2C-76.624118%2C10.97&showTable=true. 
 
 ### Preprocessing: 
-Preprocessing includes removing any null values which may affect the accuracy of the model. The main steps include formatting, cleaning, and sampling. The cleaning process is used for the removal or fixing of some missing data. Incomplete data in crucial attributes like description has been removed. Formatting includes replacing incomplete data. Some of the values formatted are I, O which were changed to Inside, Outside. We had around 13 different target variables. Grouping of these target variables was done based on the severity of the attack. Physical threats were considered high risk factored attacks whereas other crimes were considered as low and medium risk factored crimes.
+Preprocessing includes removing any null values which may affect the accuracy of the model. The main steps include formatting, cleaning, and sampling. The cleaning process is used for the removal or fixing of some missing data. Incomplete data in crucial attributes like description has been removed. Formatting includes replacing incomplete data. Some of the values formatted are I, O which were changed to Inside, Outside. We had around 13 different target variables. Grouping of these target variables was done based on the severity of the attack. Physical threats were considered high-risk medium-ris factored attacks whereas other crimes were considered as low and medium risk factored crimes.
 
 #### Number of rows: 552,105. 
 
@@ -41,15 +41,6 @@ Preprocessing includes removing any null values which may affect the accuracy of
 | VRIName (str, char)                | Video remote interpretation.              |
 | Total_Incidents (float, int)       | Total incidents in the location.          |
 
-### 3-way classification: 
-We are going to explore a 3-way classification method by creating 3 classes for prediction (High, Medium, and Low). We had the CrimeDateTime feature from which we generated other features like the month of the crime, Day of the week, and Hour and these attributes were used to generate the attribute like the season, part of the day (Morning or night), and Day of the Crime (weekend or weekday).
-Creating a new column label based on the description column. 
-
-| Classification  | Types of crimes                 |
-| :----------------| :--------------------------------- |
-| Low (0)         | Larceny, Burglary, Auto Theft   |
-| Medium (1)      | Robbery, Assault                |
-| High (2)        | Shooting, Rape, Arson, Homicide |
 
 #### feature variables are:  'Season', 'Crime_Hour',' District', 'Neighborhood', 'Crime_WeekDay'. 
 We have divided the crime accordingly respected to the season of the year, what hours on a particular day, the different districts, and weekdays/weekends. This helps us analyze the huge dataset within a few graphical analytics. 
@@ -71,6 +62,16 @@ In 2-way classification, we categorize the crime types into 2 classes: Fatal ( w
 | :---------------------| :------------------------------------------------ |
 | Fatal              | Shooting, Rape, Arson, Homicide.                 |
 | Non-Fatal          | Larceny, Burglary, Auto Theft, Robbery, Assault  |
+
+### 3-way classification: 
+We are going to explore a 3-way classification method by creating 3 classes for prediction (High, Medium, and Low). We had the CrimeDateTime feature from which we generated other features like the month of the crime, Day of the week, and Hour and these attributes were used to generate the attribute like the season, part of the day (Morning or night), and Day of the Crime (weekend or weekday).
+Creating a new column label based on the description column. 
+
+| Classification  | Types of crimes                 |
+| :----------------| :--------------------------------- |
+| Low (0)         | Larceny, Burglary, Auto Theft   |
+| Medium (1)      | Robbery, Assault                |
+| High (2)        | Shooting, Rape, Arson, Homicide |
 
 ### Conclusion: 
 In this project, we have analyzed the crime trends of Baltimore City using the dataset of all crimes reported in the city of Baltimore that we got from open-Baltimore. Also based on the findings we developed prediction models using a Random Forest Classifier and KNN classifier, for both the cases of 2-way classification (Physical and Non Physical Threat) and 3-way classification( Low, Medium, and High). This application is helpful for people to know if their visit to Baltimore is safe. And also helpful for the Police Dept, so that high-risk areas could be identified to increase protection for the safety of the public.
