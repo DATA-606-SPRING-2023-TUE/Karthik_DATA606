@@ -12,7 +12,7 @@ We have taken the dataset from OpenBaltimore, which consists of crime data in di
 https://data.baltimorecity.gov/datasets/part1-crime-data/explore?location=39.304390%2C-76.624118%2C10.97&showTable=true. 
 
 ### Preprocessing: 
-Preprocessing includes removing any null values which may affect the accuracy of the model. The main steps include formatting, cleaning, and sampling. The cleaning process is used for the removal or fixing of some missing data. Incomplete data in crucial attributes like description has been removed. Formatting includes replacing incomplete data. Some of the values formatted are I, O which were changed to Inside, Outside. We had around 13 different target variables. Grouping of these target variables was done based on the severity of the attack. Physical threats were considered high-risk medium-ris factored attacks whereas other crimes were considered as low and medium risk factored crimes.
+Preprocessing includes removing any null values which may affect the accuracy of the model. The main steps include formatting, cleaning, and sampling. The cleaning process is used for the removal or fixing of some missing data. Incomplete data in crucial attributes like description has been removed. Formatting includes replacing incomplete data. Some of the values formatted are I, O which were changed to Inside, Outside. We had around 13 different target variables. Grouping of these target variables was done based on the severity of the attack. Physical threats were considered high-risk medium-is factored attacks whereas other crimes were considered low and medium-risk factored crimes.
 
 #### Number of rows: 552,105. 
 
@@ -48,22 +48,34 @@ We have divided the crime accordingly respected to the season of the year, what 
 ### Objective: 
 Through this project we want to deliver a machine learning model which predicts the level of risk of the crime associated with that district, thus evaluating the safe scale of the area and helping people in deciding the safe place to move in for a new life.
 
+### Exploratory Data Analysis: 
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/f7895e0b-3694-4999-b812-9726f02a0bb3)
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/1cb88f59-551f-4cd2-819a-251a947517c8)
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/6b6f0714-75ae-409f-b5ed-c6ca7695d100)
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/1aee5f12-d346-43b6-bea8-c905b77a30d7)
+
 ### K-NN Classification:
 With the 3 classes to predict, we created a model using the KNN classifier. This approach determines the likelihood that a data point will belong to one of the classes based on the data points closest to it. The KNN algorithm creates an imaginary boundary to classify the data. When new data points come in, the algorithm will try to predict that to the nearest boundary line.
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/78f2b635-7a5a-4338-9e9e-19a645c2634c)
+#### Classification Report of KNN-Classifier with 3-way classification. 
 
 ### Random-Forest Classification:  
 We have implemented a Random Forest classifier, as it uses a random subset of the training set to generate a collection of decision trees, then accumulates votes from various decision trees to get the final prediction.
 
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/a51480be-c48f-4f23-b5c8-693d9da0e465)
+#### Classification Report of Random Forest Classifier with 2-way classification.
+
+![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/113570fd-07b9-4929-bd74-f6e677438bc5)
+#### Classification report of Random Forest classifier with 3-way classification.
+
 ### Machine Learning models: 
-The objective would be to train a rediction model. We are going to build the model using K-Nearest Neighbor (KNN) classification and Random Forest algorithm for crime prediction. And will eventually host the application on StreamLit for better user interaction.
+The objective would be to train a prediction model. We are going to build the model using K-Nearest Neighbor (KNN) classification and Random Forest algorithm for crime prediction. And will eventually host the application on StreamLit for better user interaction.
 We have used Grid Search to tune the hyper-parameters and increase the accuracy of the model. It is a library function from sklearn's model_selection package. We are going to loop through predefined hyperparameters and fit our estimator (model) on the training set. This way we can select the best parameters from the listed hyper-parameters.
-
-
-![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/e848b6c7-4bc1-4afd-99cd-809c5f7f2405)
-
-
-
-
 
 ### 2-way classification: 
 In 2-way classification, we categorize the crime types into 2 classes: Fatal ( which involves physical Threat ) and Non-Fatal (All other). Hence, 2 classes for prediction.
