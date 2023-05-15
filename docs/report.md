@@ -1,5 +1,5 @@
 # Baltimore City crime rate and safety level statistics.
-### Data 606 final project report. 
+## Data 606 final project report. 
 
 ### - Presentation video: https://youtu.be/hBOvkVGrep0
 ### - Presentation slides: https://docs.google.com/presentation/d/10AHbVPUm4aBDM_d5_PrFO-RA101R41rj/edit?usp=sharing&ouid=105317721196373363836&rtpof=true&sd=true
@@ -9,6 +9,7 @@ Crimes are the most significant threat to mankind. It is an act that causes phys
 
 ### Dataset: 
 We have taken the dataset from OpenBaltimore, which consists of crime data in different parts of Baltimore. We have 16 features and about 5 lakh instances in the data set.
+
 https://data.baltimorecity.gov/datasets/part1-crime-data/explore?location=39.304390%2C-76.624118%2C10.97&showTable=true. 
 
 ### Preprocessing: 
@@ -62,16 +63,16 @@ Through this project we want to deliver a machine learning model which predicts 
 With the 3 classes to predict, we created a model using the KNN classifier. This approach determines the likelihood that a data point will belong to one of the classes based on the data points closest to it. The KNN algorithm creates an imaginary boundary to classify the data. When new data points come in, the algorithm will try to predict that to the nearest boundary line.
 
 ![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/78f2b635-7a5a-4338-9e9e-19a645c2634c)
-#### Classification Report of KNN-Classifier with 3-way classification. 
+##### Classification Report of KNN-Classifier with 3-way classification. 
 
 ### Random-Forest Classification:  
 We have implemented a Random Forest classifier, as it uses a random subset of the training set to generate a collection of decision trees, then accumulates votes from various decision trees to get the final prediction.
 
 ![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/a51480be-c48f-4f23-b5c8-693d9da0e465)
-#### Classification Report of Random Forest Classifier with 2-way classification.
+##### Classification Report of Random Forest Classifier with 2-way classification.
 
 ![image](https://github.com/DATA-606-SPRING-2023-TUE/Karthik_DATA606/assets/124107117/113570fd-07b9-4929-bd74-f6e677438bc5)
-#### Classification report of Random Forest classifier with 3-way classification.
+##### Classification report of Random Forest classifier with 3-way classification.
 
 ### Machine Learning models: 
 The objective would be to train a prediction model. We are going to build the model using K-Nearest Neighbor (KNN) classification and Random Forest algorithm for crime prediction. And will eventually host the application on StreamLit for better user interaction.
